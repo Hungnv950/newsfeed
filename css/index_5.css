@@ -1,0 +1,182 @@
+@import url(footer.css);
+@font-face {
+  font-family: MontserratsemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf); }
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+/*Color from left filed*/
+/*Color from right filed*/
+/*Color text*/
+/*color $color_content_12*/
+/*color bg 2*/
+/*color opacity*/
+/*colorfooter*/
+/*color of 12*/
+/*bg 4*/
+/*size of p content*/
+/*size p small*/
+/*size h1 */
+/*height of input and content form*/
+/*size back*/
+body, header, content, footer, .container {
+  font-family: MontserratLight, serif;
+  width: 100%;
+  height: auto; }
+
+header {
+  padding-top: 20px; }
+  header h1 {
+    letter-spacing: 2px; }
+
+.header-fixed {
+  padding-top: 185px; }
+
+/*button header */
+.header_choose {
+  margin-top: 20px; }
+  .header_choose p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0; }
+    .header_choose p.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px; }
+    .header_choose p.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0; }
+
+/*button back*/
+.back {
+  font-size: 40px; }
+
+.animationload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999999; }
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  width: 200px;
+  height: 200px;
+  background-image: url("loading-gear.gif");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+body {
+  background: #fff6f2;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  body .bg-home {
+    background: url("../imgs/header_5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto; }
+    body .bg-home header .title img.content_feed_5 {
+      width: 25px;
+      height: 25px; }
+  body .thumbnail iframe {
+    width: 100%;
+    height: 500px; }
+  body .btn_config img {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin: 10px 8px; }
+  body .content {
+    margin-top: -70px; }
+  body .title .content_feed_5_back {
+    font-size: 90px;
+    font-weight: bold;
+    color: #02145a; }
+  body .title .icon_right {
+    font-size: 80px;
+    font-weight: bold;
+    color: #02145a;
+    float: right;
+    margin-right: 30px; }
+  body .content_title {
+    margin: 50px 0;
+    font-size: 60px; }
+  body .content_title .title_1 {
+    color: #fff;
+    font-family: monsterLight; }
+  body .content_title .title_2 {
+    color: rgba(254, 245, 238, 0.47);
+    font-family: monsterLight; }
+  body .content_title .title_3 {
+    color: rgba(254, 245, 238, 0.47);
+    font-family: monsterLight;
+    margin-right: 0px; }
+  body .btn_config {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  body .btn_config .btn_small {
+    width: 80px;
+    height: 80px;
+    background: #33d5fe;
+    border-radius: 40px;
+    z-index: 1;
+    margin-top: -113px;
+    margin-left: 30px; }
+  body .btn_config .btn_lag {
+    width: 140px;
+    height: 140px;
+    background: rgba(254, 245, 238, 0.47);
+    border-radius: 80px;
+    z-index: 0;
+    margin-top: -100px; }
+  body .btn_small > span {
+    margin-left: 32px;
+    margin-top: 32px; }
+  body .content_config {
+    margin-top: 25px; }
+  body .caption h1 {
+    font-family: monsterBlack;
+    font-size: 45px;
+    color: #02145a; }
+  body .caption p {
+    font-family: monsterRegular;
+    font-size: 38px;
+    color: #02145a;
+    padding-bottom: 15px; }
+  body .caption .fa {
+    font-size: 50px;
+    color: #a2a6c6; }
+  body .caption {
+    padding-bottom: 65px !important;
+    padding-top: 10px !important; }
+  body .caption .num {
+    font-size: 30px;
+    font-family: monsterLight;
+    color: #a2a6c6; }
+  body .header_title {
+    margin-left: 0px;
+    margin-right: 0px; }
+  body .thumbnail a > img, body .thumbnail > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0; }
+  body .thumbnail {
+    border-radius: 20px; }
+  body p.icon_content_5 {
+    font-size: 45px;
+    font-family: monsterLight;
+    color: #a2a6c6;
+    display: initial; }
+  body .thumbnail .caption {
+    padding: 40px;
+    color: #333; }
+
+/*# sourceMappingURL=index_5.css.map */
