@@ -1,0 +1,153 @@
+.row {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+#footer {
+  border-top: 1px solid #fff3f6;
+  -moz-box-shadow: 0px -11px 12px #fff4f6;
+  -webkit-box-shadow: 0px -11px 12px #fff4f6;
+  box-shadow: 0px -11px 12px #fff4f6;
+  bottom: 0px !important;
+  position: fixed;
+  background: #fff;
+  /*margin-left: -15px;*/
+  width: 100%;
+  padding-top: 10px; }
+
+h1, p {
+  font-family: monsterLight;
+  font-size: 14px; }
+
+#footer ul li p {
+  margin: 5px 0 5px -5px;
+  font-size: 11px; }
+
+#exTab1 .tab-content {
+  padding: 5px; }
+#exTab1 .nav-pills li {
+  width: 20%;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  #exTab1 .nav-pills li a {
+    color: #a3a5bb;
+    border-radius: 0;
+    padding: 0 4px;
+    text-align: center;
+    display: block; }
+    #exTab1 .nav-pills li a .fa {
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      display: block; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  color: red !important;
+  background-color: #fff !important; }
+
+@font-face {
+  font-family: monsterBlack;
+  src: url(../fonts/Montserrat-Bold.ttf); }
+@font-face {
+  font-family: monsterRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+@font-face {
+  font-family: monsterLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: monsterBold;
+  src: url(../fonts/Montserrat-Bold.ttf); }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+h1, p {
+  font-family: monsterBold;
+  font-size: 20px; }
+
+p {
+  font-size: 24px;
+  font-family: monsterLight; }
+
+.config_1 {
+  margin-right: 0;
+  margin-left: 0;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position-y: -107px;
+  background-repeat: no-repeat;
+  min-height: 230px; }
+
+.config_h1 {
+  text-align: center;
+  color: #02145a; }
+
+.config_h1_bottom {
+  font-size: 18px; }
+
+.content_1 img {
+  vertical-align: middle;
+  width: 28%;
+  margin-top: 20px; }
+.content_1 h1 {
+  color: #02145a;
+  font-weight: bold; }
+
+.img_cf {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content2 {
+  margin-top: -35px; }
+
+.config_p {
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #02145a;
+  text-align: center; }
+
+.coaching {
+  padding-left: 15px; }
+
+.btn_config {
+  position: relative;
+  top: -40px; }
+  .btn_config .btn_lag {
+    width: 50px;
+    height: 50px;
+    background: rgba(254, 245, 238, 0.37);
+    border-radius: 50%;
+    z-index: 99;
+    margin: auto;
+    position: relative; }
+  .btn_config .btn_small {
+    width: 25px;
+    height: 25px;
+    background: #fb5b62;
+    border-radius: 50%;
+    z-index: 100;
+    margin: auto;
+    position: absolute;
+    bottom: 13px;
+    right: 0;
+    left: 0; }
+    .btn_config .btn_small .config_plus {
+      background: url(../images/plus.png);
+      font-size: 18px;
+      text-align: center;
+      z-index: 999;
+      padding: 10px;
+      background-repeat: no-repeat;
+      position: absolute;
+      margin: 5px;
+      color: #fff;
+      bottom: -15px;
+      left: -7px;
+      right: 0; }
+  .btn_config .btn_small:hover {
+    background: rgba(251, 91, 98, 0.63); }
+
+/*# sourceMappingURL=bstyle1.css.map */

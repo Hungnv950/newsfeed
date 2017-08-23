@@ -1,0 +1,19 @@
+@font-face {
+    font-family: monsterBlack;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: monsterRegular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: monsterLight;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: monsterBold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}

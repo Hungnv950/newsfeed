@@ -1,0 +1,86 @@
+@import url(footer.css);
+@font-face {
+  font-family: MontserratsemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf); }
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+/*Color from left filed*/
+/*Color from right filed*/
+/*Color text*/
+/*color $color_content_12*/
+/*color bg 2*/
+/*color opacity*/
+/*colorfooter*/
+/*color of 12*/
+/*bg 4*/
+/*size of p content*/
+/*size p small*/
+/*size h1 */
+/*height of input and content form*/
+/*size back*/
+body, header, content, footer, .container {
+  font-family: MontserratLight, serif;
+  width: 100%;
+  height: auto; }
+
+header {
+  padding-top: 20px; }
+  header h1 {
+    letter-spacing: 2px; }
+
+.header-fixed {
+  padding-top: 185px; }
+
+/*button header */
+.header_choose {
+  margin-top: 20px; }
+  .header_choose p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0; }
+    .header_choose p.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px; }
+    .header_choose p.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0; }
+
+/*button back*/
+.back {
+  font-size: 40px; }
+
+.animationload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999999; }
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  width: 200px;
+  height: 200px;
+  background-image: url("loading-gear.gif");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+header {
+  padding-top: 0; }
+  header img {
+    width: 100%; }
+  header .header-top h1 {
+    font-size: 13px;
+    color: #02145a;
+    font-family: MontserratsemiBold, serif; }
+
+/*# sourceMappingURL=index_6.css.map */
