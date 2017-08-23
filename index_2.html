@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Categories</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,43 +20,59 @@
     <script type="text/javascript" src="libs/angular.min.js"></script>
     <script type="text/javascript" src="libs/angular-cookies.js"></script>
     <script type="text/javascript" src="js/deniNewFeed2.js"></script>
+    <link rel="stylesheet" href="css/index_2.css">
 </head>
 <body>
 <div class="container-fluid bg-home" ng-controller="viewCtrl" data-ng-app="deniApp">
     <!--START content_feed_2-->
-    <div class="content_feed_2">
-        <div class="col-xs-12">
-            <h1 class="col-xs-offset-3 col-xs-6">DEIN NEWSFEED</h1>
-            <span class="col-xs-1 content_feed_2_close"></span>
+    <div class="row">
+        <div class="content_feed_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="col-xs-offset-4 col-xs-6">DEIN NEWSFEED</h1>
+                        <span class="col-xs-1 content_feed_2_close"></span>
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="newfeed_2_bn">
+                        <div class="newfeed_2_bn_right"></div>
+                        <div class="newfeed_2_bn_left" ng-click="back_to_newFeed_3()"></div>
+                    </div>
+                </div>-->
+                <div class="row btn_touch">
+                    <div class="header_choose col-xs-12">
+                        <img src="imgs/icon_circle_big.png" alt="">
+                        <img src="imgs/icon_circle_small.png" alt="">
+                        <img src="imgs/icon_circle_small.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="newfeed_2_top">
+                        <p>
+                            Wähle aus was Dich interessiert
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row"></div>
-        <div class="newfeed_2_bn">
-            <div class="newfeed_2_bn_right"></div>
-            <div class="newfeed_2_bn_left" ng-click="back_to_newFeed_3()"></div>
-        </div>
-
-        <div class="newfeed_2_top">
-            <p>
-                Wähle aus was Dich interessiert
-            </p>
-        </div>
-
-        <div class="newfeed_line"></div>
-
     </div>
     <!--END content_feed_2-->
-
-    <div class="content_link">
-        <div class="container col-xs-12" style="padding-bottom: 200px">
-            <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
-               ng-click="checkClick(key,value._id)">{{value.title}}</a>
+    <div class="row">
+        <div class="content_link">
+            <div class="container col-xs-12" style="padding-bottom: 200px">
+                <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
+                   ng-click="checkClick(key,value._id)">{{value.title}}</a>
+            </div>
+            <div class="row"></div>
         </div>
-        <div class="row"></div>
     </div>
 
     <!--BEGIN NEWFEDD STARTED-->
-    <div class="newfeed_starten weiter" ng-click="checkNext()">
-        <h1>Weiter</h1>
+    <div class="row">
+        <div class="newfeed_starten weiter" ng-click="checkNext()">
+            <h1>Weiter</h1>
+        </div>
     </div>
     <!--END NEWFEED STARTED-->
 
