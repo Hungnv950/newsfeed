@@ -77,96 +77,105 @@ header {
 
 body {
   background: #FFF6F2; }
-
-header {
-  padding-top: 0; }
-  header .header-top {
-    background: url("../imgs/bg4.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
-    height: 120px; }
-    header .header-top .header-own {
-      padding-top: 20px; }
-      header .header-top .header-own p {
-        text-align: center;
-        font-family: MontserratsemiBold, serif;
-        font-size: 13px;
-        color: #02145a;
-        color: #fff;
-        letter-spacing: 2px;
+  body header {
+    padding-top: 0; }
+    body header .header-top {
+      background: url("../imgs/bg4.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+      height: 120px;
+      padding-top: 40px;
+      text-align: center; }
+      body header .header-top .header-own {
         padding-top: 20px; }
-      header .header-top .header-own .img {
-        text-align: right; }
-        header .header-top .header-own .img img {
-          vertical-align: middle;
-          height: 40px; }
-  header .btn_config {
-    top: 50%;
-    left: 50%;
-    margin-top: -35px; }
-    header .btn_config .btn_config_top .btn_small {
-      width: 40px;
-      height: 40px;
-      background: #fb5b62;
-      border-radius: 30px;
-      z-index: 1;
-      margin: auto;
-      margin-top: -50px; }
-      header .btn_config .btn_config_top .btn_small:hover {
-        background: rgba(251, 91, 98, 0.63); }
-      header .btn_config .btn_config_top .btn_small .config_plus {
-        background: url(../imgs/plus.png);
+        body header .header-top .header-own p {
+          font-family: MontserratsemiBold, serif;
+          font-size: 13px;
+          color: #02145A; }
+        body header .header-top .header-own .img {
+          text-align: right; }
+          body header .header-top .header-own .img img {
+            vertical-align: middle;
+            height: 40px; }
+    body header .btn_config {
+      top: 50%;
+      left: 50%;
+      margin-top: -35px; }
+      body header .btn_config .btn_config_top .btn_small {
+        width: 40px;
+        height: 40px;
+        background: #fb5b62;
+        border-radius: 30px;
+        z-index: 1;
+        margin: auto;
+        margin-top: -50px; }
+        body header .btn_config .btn_config_top .btn_small:hover {
+          background: rgba(251, 91, 98, 0.63); }
+        body header .btn_config .btn_config_top .btn_small .config_plus {
+          background: url(../imgs/plus.png);
+          text-align: center;
+          z-index: 999;
+          background-repeat: no-repeat;
+          position: absolute;
+          margin: 10px;
+          width: 20px;
+          height: 20px;
+          background-size: cover; }
+      body header .btn_config .btn_lag {
+        width: 60px;
+        height: 60px;
+        background: rgba(254, 245, 238, 0.37);
+        border-radius: 55px;
+        z-index: 0;
+        margin: auto; }
+    body header .end-header h1 {
+      font-size: 24px;
+      font-family: MontserratLight, serif;
+      color: #02145a;
+      letter-spacing: 0; }
+  body .field {
+    padding: 10px;
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center; }
+    body .field span {
+      width: 24px;
+      height: 24px;
+      background-color: #33D5FE;
+      border-radius: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: -4px auto 0; }
+    body .field .count-post {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      right: 0;
+      color: #fff;
+      text-align: center;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%); }
+      body .field .count-post p {
+        font-size: 80px;
+        font-family: MontserratLight, serif; }
+    body .field .title-cate {
+      position: absolute;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      top: 90%;
+      left: 20%;
+      color: #fff; }
+      body .field .title-cate p {
         text-align: center;
-        z-index: 999;
-        background-repeat: no-repeat;
-        position: absolute;
-        margin: 10px;
-        width: 20px;
-        height: 20px;
-        background-size: cover; }
-    header .btn_config .btn_lag {
-      width: 60px;
-      height: 60px;
-      background: rgba(254, 245, 238, 0.37);
-      border-radius: 55px;
-      z-index: 0;
-      margin: auto; }
-  header .end-header h1 {
-    font-size: 24px;
-    font-family: MontserratLight, serif;
-    color: #02145a;
-    letter-spacing: 0; }
-
-.field {
-  padding: 10px;
-  position: relative;
-  margin-bottom: 15px;
-  text-align: center; }
-  .field span {
-    width: 14px;
-    height: 14px;
-    background-color: #33D5FE;
-    border-radius: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: -7px auto 0; }
-  .field .count-post {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%); }
-  .field .title-cate {
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold; }
+        font-size: 21px;
+        font-family: MontserratsemiBold, serif; }
+  body .view_two_pro .field img {
+    width: 50%; }
+  body .content {
+    padding-bottom: 50px; }
 
 /*# sourceMappingURL=index_4.css.map */
