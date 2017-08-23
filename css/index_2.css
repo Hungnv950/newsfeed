@@ -56,31 +56,22 @@ header {
   font-size: 40px; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  background: #ffbeb1 !important; }
   body .bg-home .content_feed_2 {
     background: url("../imgs/header_2.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-    position: relative;
     width: 100%; }
-    body .bg-home .content_feed_2 .content_feed_2_close {
-      background: url("../imgs/icon_remove.png");
-      width: 6px;
-      height: 30px;
-      float: right;
-      margin-top: 30px;
-      float: right;
-      background-size: cover;
-      background-repeat: no-repeat; }
-      body .bg-home .content_feed_2 .content_feed_2_close:hover {
-        width: 40px;
-        height: 80px; }
+    body .bg-home .content_feed_2 img.remove_icon {
+      padding: 23px;
+      margin-top: 16px; }
     body .bg-home .content_feed_2 h1 {
       font-family: MontserratsemiBold, serif;
       color: #02145a;
       font-size: 13px;
-      margin-top: 30px; }
+      margin-top: 40px; }
     body .bg-home .content_feed_2 .newfeed_2_bn {
       height: 120px;
       text-align: center;
@@ -97,22 +88,27 @@ body {
         padding: 20px 15px; }
     body .bg-home .content_feed_2 .btn_touch {
       text-align: center; }
+      body .bg-home .content_feed_2 .btn_touch .header_choose {
+        margin-top: 0 !important; }
   body .bg-home .content_link {
     text-align: center;
     background: url("../imgs/bg_index_2.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-    padding-top: 50px; }
+    padding-top: 50px;
+    margin-top: -25px; }
     body .bg-home .content_link .btn_link {
-      margin: 14px 20px;
+      margin: 6px 15px;
       border: 1px solid #222222;
       border-radius: 40px;
       color: #222222;
-      font-size: 36px; }
+      font-size: 11px;
+      font-family: MontserratRegular, serif; }
       body .bg-home .content_link .btn_link a {
         color: #02145a;
-        font-size: 40px; }
+        font-size: 11px;
+        font-family: MontserratRegular, serif; }
     body .bg-home .content_link .btn-active {
       background: rgba(2, 20, 90, 0.43);
       border: 1px solid #02145a; }
@@ -124,7 +120,7 @@ body {
     background-repeat: no-repeat;
     height: 60px;
     position: fixed;
-    bottom: 50px;
+    bottom: 100px;
     width: 100%;
     border-top: 2px solid #fff3f6;
     text-align: center; }
@@ -132,29 +128,11 @@ body {
       color: #fff;
       font-family: MontserratsemiBold, serif;
       font-size: 13px;
-      line-height: 5px; }
-  @media only screen and (min-device-width: 481px) and (max-device-width: 640px) and (orientation: landscape) {
-    body .bg-home .config_2 {
-      margin: 50px;
-      padding-bottom: 230px; } }
-  @media only screen and (min-device-width: 640px) and (max-device-width: 800px) and (orientation: landscape) {
-    body .bg-home #footer {
-      /*margin-left: -15px;*/
-      width: 100%; }
-    body .bg-home .config_2 {
-      margin: 50px;
-      padding-bottom: 230px; }
-    body .bg-home #exTab1 .nav-pills > li {
-      padding: 0 42px; }
-    body .bg-home .btn_config {
-      padding-top: 230px; } }
-  @media only screen and (min-device-width: 1336px) and (orientation: landscape) {
-    body .bg-home .config_2 {
-      margin: 50px;
-      padding-bottom: 230px; }
-    body .bg-home .btn_config {
-      padding-top: 250px;
-      top: 50%;
-      left: 50%; } }
+      line-height: 5px;
+      padding: 5px; }
+  @media only screen and (min-device-width: 768px) {
+    body img.remove_icon {
+      padding: 50px;
+      margin-top: 0px; } }
 
 /*# sourceMappingURL=index_2.css.map */
