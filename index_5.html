@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>List Articles</title>
+    <title>Page 10</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           media="all">
@@ -13,46 +13,140 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index_5.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-    <script type="text/javascript" src="libs/angular.min.js"></script>
-    <script type="text/javascript" src="libs/angular-cookies.js"></script>
-    <script type="text/javascript" src="js/deniNewFeed5.js"></script>
-    <link rel="stylesheet" href="css/index_5.css">
 </head>
 <body>
-<div class="container-fluid" ng-controller="newFeed5" ng-app="deniApp">
+<div class="container-fluid">
     <div class="row">
-        <header class="bg-home">
+        <div class="header bg-home">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 title">
-                        <img class="col-xs-2 content_feed_5_back" src="imgs/icon_bookmark.png"
-                             ng-click="back_to_newfeed_4()">
-                        <h1 class="col-xs-8">GEWICHT & ERNAHRUNG</h1>
-                        <img class="col-xs-2 content_feed_5_back" src="imgs/icon_remove.png" alt="">
+                    <div class="header-top">
+                        <img class="col-xs-1 tag" src="imgs/icon_tag.png" alt="">
+                        <h1 class="col-xs-8">FAVORISIERTE ARTIKEL</h1>
+                        <img class="col-xs-1 close" src="imgs/icon_remove.png" alt="">
                     </div>
                 </div>
-                <div class="row header_title">
-                    <div class="col-xs-12 content_title">
-                        <span class="col-xs-4 title_1">Vegan</span>
-                        <span class="col-xs-6 title_2">Glutenfrei</span>
-                        <span class="col-xs-2 title_3">Nut</span>
+                <div class="row">
+                    <div class="cat">
+                        <div class="col-xs-3">
+                            <h1>Vegan</h1>
+                        </div>
+                        <div class="col-xs-3">
+                            <h1>Glutenfrei</h1>
+                        </div>
+                        <div class="col-xs-3">
+                            <h1>Nutrition</h1>
+                        </div>
                     </div>
                 </div>
-                <div class="row btn_config">
-                    <a href="#">
-                        <!--<div class="col-xs-12" style="">
-                            <div class="btn_lag"></div>
-                            <div class="btn_small">
-                                <img src="images/newfeed_5/buttom.png" alt="">
-                            </div>-->
-                        <img src="imgs/icon_button.png" alt="">
-                    </a>
+                <div class="row">
+                    <span class="three-cirle"></span>
                 </div>
             </div>
-        </header>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <img src="imgs/newfeed_10/image_content_10.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h1>Gastbeitrag von Johnny: Vietnamesisch…
+                            </h1>
+                            <p>Einge gute Work-Life-Balance ist offenbar gar nicht so
+                                einfach umzusetzen, wie aktuelle Erkrankungen
+                                durch Stressbedingte Auslöser zeigen. Wichtig dabei…</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <img src="imgs/icon_oclock.png" alt="">
+                            <p>17.03.2018 </p>
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="imgs/icon_cmt.png" alt="">
+                            <p>24</p>
+                        </div>
+                        <div class="col-xs-3">
+                            <img src="imgs/icon_stt.png" alt="">
+                            <p>125</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <img src="imgs/newfeed_10/image_content_10.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h1>Gastbeitrag von Johnny: Vietnamesisch…
+                            </h1>
+                            <p>Einge gute Work-Life-Balance ist offenbar gar nicht so
+                                einfach umzusetzen, wie aktuelle Erkrankungen
+                                durch Stressbedingte Auslöser zeigen. Wichtig dabei…</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <img src="imgs/icon_oclock.png" alt="">
+                            <p>17.03.2018 </p>
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="imgs/icon_cmt.png" alt="">
+                            <p>24</p>
+                        </div>
+                        <div class="col-xs-3">
+                            <img src="imgs/icon_stt.png" alt="">
+                            <p>125</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <img src="imgs/newfeed_10/image_content_10.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="title">
+                            <h1>Gastbeitrag von Johnny: Vietnamesisch…
+                            </h1>
+                            <p>Einge gute Work-Life-Balance ist offenbar gar nicht so
+                                einfach umzusetzen, wie aktuelle Erkrankungen
+                                durch Stressbedingte Auslöser zeigen. Wichtig dabei…</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <img src="imgs/icon_oclock.png" alt="">
+                            <p>17.03.2018 </p>
+                        </div>
+                        <div class="col-xs-4">
+                            <img src="imgs/icon_cmt.png" alt="">
+                            <p>24</p>
+                        </div>
+                        <div class="col-xs-3">
+                            <img src="imgs/icon_stt.png" alt="">
+                            <p>125</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
