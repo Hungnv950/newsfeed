@@ -1,0 +1,160 @@
+@import url(footer.css);
+@import url(footer.css);
+@font-face {
+  font-family: MontserratsemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf); }
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+/*Color from left filed*/
+/*Color from right filed*/
+/*Color text*/
+/*color $color_content_12*/
+/*color bg 2*/
+/*color opacity*/
+/*colorfooter*/
+/*color of 12*/
+/*bg 4*/
+/*size of p content*/
+/*size p small*/
+/*size h1 */
+/*height of input and content form*/
+/*size back*/
+body, header, content, footer, .container {
+  font-family: MontserratLight, serif;
+  width: 100%;
+  height: auto; }
+
+header {
+  padding-top: 20px; }
+  header h1 {
+    letter-spacing: 2px; }
+
+.header-fixed {
+  padding-top: 185px; }
+
+/*button header */
+.header_choose {
+  margin-top: 20px; }
+  .header_choose p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0; }
+    .header_choose p.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px; }
+    .header_choose p.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0; }
+
+/*button back*/
+.back {
+  font-size: 40px; }
+
+body {
+  height: 100%; }
+  body .bg-home .content_feed_2 {
+    background: url("../imgs/header_2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    position: relative;
+    width: 100%; }
+    body .bg-home .content_feed_2 .content_feed_2_close {
+      background: url("../imgs/icon_remove.png");
+      width: 6px;
+      height: 30px;
+      float: right;
+      margin-top: 30px;
+      float: right;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      body .bg-home .content_feed_2 .content_feed_2_close:hover {
+        width: 40px;
+        height: 80px; }
+    body .bg-home .content_feed_2 h1 {
+      font-family: MontserratsemiBold, serif;
+      color: #02145a;
+      font-size: 13px;
+      margin-top: 30px; }
+    body .bg-home .content_feed_2 .newfeed_2_bn {
+      height: 120px;
+      text-align: center;
+      padding-top: 35px; }
+    body .bg-home .content_feed_2 .newfeed_2_top {
+      height: 120px;
+      text-align: center;
+      position: relative;
+      z-index: 99999; }
+      body .bg-home .content_feed_2 .newfeed_2_top p {
+        font-family: MontserratLight, serif;
+        color: #02145a;
+        font-size: 21px;
+        padding: 20px 15px; }
+    body .bg-home .content_feed_2 .btn_touch {
+      text-align: center; }
+  body .bg-home .content_link {
+    text-align: center;
+    background: url("../imgs/bg_index_2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-top: 50px; }
+    body .bg-home .content_link .btn_link {
+      margin: 14px 20px;
+      border: 1px solid #222222;
+      border-radius: 40px;
+      color: #222222;
+      font-size: 36px; }
+      body .bg-home .content_link .btn_link a {
+        color: #02145a;
+        font-size: 40px; }
+    body .bg-home .content_link .btn-active {
+      background: rgba(2, 20, 90, 0.43);
+      border: 1px solid #02145a; }
+    body .bg-home .content_link .btn_none {
+      background: #fff;
+      border: 1px solid #fff; }
+  body .bg-home .newfeed_starten {
+    background: url(../imgs/bg_newfeed2_conbutton.png);
+    background-repeat: no-repeat;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    border-top: 2px solid #fff3f6;
+    text-align: center; }
+    body .bg-home .newfeed_starten h1 {
+      color: #fff;
+      font-family: MontserratsemiBold, serif;
+      font-size: 13px;
+      line-height: 5px; }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 640px) and (orientation: landscape) {
+    body .bg-home .config_2 {
+      margin: 50px;
+      padding-bottom: 230px; } }
+  @media only screen and (min-device-width: 640px) and (max-device-width: 800px) and (orientation: landscape) {
+    body .bg-home #footer {
+      /*margin-left: -15px;*/
+      width: 100%; }
+    body .bg-home .config_2 {
+      margin: 50px;
+      padding-bottom: 230px; }
+    body .bg-home #exTab1 .nav-pills > li {
+      padding: 0 42px; }
+    body .bg-home .btn_config {
+      padding-top: 230px; } }
+  @media only screen and (min-device-width: 1336px) and (orientation: landscape) {
+    body .bg-home .config_2 {
+      margin: 50px;
+      padding-bottom: 230px; }
+    body .bg-home .btn_config {
+      padding-top: 250px;
+      top: 50%;
+      left: 50%; } }
+
+/*# sourceMappingURL=index_2.css.map */

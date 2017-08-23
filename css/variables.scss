@@ -15,11 +15,7 @@
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 
-@mixin header_h1_title{
-  font-family: MontserratsemiBold, serif;
-  font-size: 13px;
-  color: $color_text;
-}
+
 @mixin p{
 
 }
@@ -39,6 +35,8 @@ $color_opacity: #9AA1BD;
 $color_footer: #a3a5bb;
 /*color of 12*/
 $color_12: #FFCDD5;
+/*bg 4*/
+$color_bg_4: #FFF6F2;
 
 $color_16: #FFD1CA;
 /*size of p content*/
@@ -59,8 +57,13 @@ body, header, content, footer, .container {
   //padding: 0;
   //margin: 0;
   width: 100%;
+  height: auto;
 }
-
+@mixin header_h1_title{
+  font-family: MontserratsemiBold, serif;
+  font-size: 13px;
+  color: $color_text;
+}
 header {
   padding-top: 20px;
   h1 {

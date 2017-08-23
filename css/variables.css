@@ -16,6 +16,7 @@
 /*color opacity*/
 /*colorfooter*/
 /*color of 12*/
+/*bg 4*/
 /*size of p content*/
 /*size p small*/
 /*size h1 */
@@ -23,7 +24,8 @@
 /*size back*/
 body, header, content, footer, .container {
   font-family: MontserratLight, serif;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 header {
   padding-top: 20px; }

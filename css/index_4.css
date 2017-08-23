@@ -1,0 +1,152 @@
+@import url(footer.css);
+@import url(footer.css);
+@font-face {
+  font-family: MontserratsemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf); }
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+/*Color from left filed*/
+/*Color from right filed*/
+/*Color text*/
+/*color $color_content_12*/
+/*color bg 2*/
+/*color opacity*/
+/*colorfooter*/
+/*color of 12*/
+/*bg 4*/
+/*size of p content*/
+/*size p small*/
+/*size h1 */
+/*height of input and content form*/
+/*size back*/
+body, header, content, footer, .container {
+  font-family: MontserratLight, serif;
+  width: 100%;
+  height: auto; }
+
+header {
+  padding-top: 20px; }
+  header h1 {
+    letter-spacing: 2px; }
+
+.header-fixed {
+  padding-top: 185px; }
+
+/*button header */
+.header_choose {
+  margin-top: 20px; }
+  .header_choose p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0; }
+    .header_choose p.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px; }
+    .header_choose p.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0; }
+
+/*button back*/
+.back {
+  font-size: 40px; }
+
+body {
+  background: #FFF6F2; }
+
+header {
+  padding-top: 0; }
+  header .header-top {
+    background: url("../imgs/bg4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    height: 120px; }
+    header .header-top .header-own {
+      padding-top: 20px; }
+      header .header-top .header-own p {
+        text-align: center;
+        font-family: MontserratsemiBold, serif;
+        font-size: 13px;
+        color: #02145a;
+        color: #fff;
+        letter-spacing: 2px;
+        padding-top: 20px; }
+      header .header-top .header-own .img {
+        text-align: right; }
+        header .header-top .header-own .img img {
+          vertical-align: middle;
+          height: 40px; }
+  header .btn_config {
+    top: 50%;
+    left: 50%;
+    margin-top: -35px; }
+    header .btn_config .btn_config_top .btn_small {
+      width: 40px;
+      height: 40px;
+      background: #fb5b62;
+      border-radius: 30px;
+      z-index: 1;
+      margin: auto;
+      margin-top: -50px; }
+      header .btn_config .btn_config_top .btn_small:hover {
+        background: rgba(251, 91, 98, 0.63); }
+      header .btn_config .btn_config_top .btn_small .config_plus {
+        background: url(../imgs/plus.png);
+        text-align: center;
+        z-index: 999;
+        background-repeat: no-repeat;
+        position: absolute;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+        background-size: cover; }
+    header .btn_config .btn_lag {
+      width: 60px;
+      height: 60px;
+      background: rgba(254, 245, 238, 0.37);
+      border-radius: 55px;
+      z-index: 0;
+      margin: auto; }
+  header .end-header h1 {
+    font-size: 24px;
+    font-family: MontserratLight, serif;
+    color: #02145a;
+    letter-spacing: 0; }
+
+.field {
+  padding: 10px;
+  position: relative;
+  margin-bottom: 15px;
+  text-align: center; }
+  .field span {
+    width: 14px;
+    height: 14px;
+    background-color: #33D5FE;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: -7px auto 0; }
+  .field .count-post {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
+  .field .title-cate {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold; }
+
+/*# sourceMappingURL=index_4.css.map */
