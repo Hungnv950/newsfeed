@@ -74,109 +74,90 @@ header {
   background-position: center;
   background-repeat: no-repeat; }
 
+/* use for title header page 5,8,9*/
 body {
   background: #fff6f2;
   width: 100%;
   padding: 0;
   margin: 0; }
   body .bg-home {
-    background: url("../imgs/header_5.png");
+    background: url("../imgs/bg_header_5.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto; }
-    body .bg-home header .title img.content_feed_5 {
-      width: 25px;
-      height: 25px; }
-  body .thumbnail iframe {
-    width: 100%;
-    height: 500px; }
+    height: auto;
+    font-family: MontserratsemiBold, serif;
+    font-size: 13px;
+    color: #02145A;
+    letter-spacing: 2px; }
+    body .bg-home .header-top img.tag {
+      width: 50px;
+      height: 35px; }
+    body .bg-home .header-top img.remove {
+      width: 50px;
+      height: 25px;
+      float: right;
+      margin-top: 5px; }
+    body .bg-home .header-top h1 {
+      font-family: MontserratsemiBold, serif;
+      font-size: 13px;
+      color: #02145A;
+      letter-spacing: 2px;
+      text-align: center; }
+    body .bg-home .title_header {
+      padding-top: 30px; }
+    body .bg-home .cat .cat1 h1 {
+      font-size: 30px;
+      font-family: MontserratRegular, serif;
+      color: #fff; }
+    body .bg-home .cat .cat2 h1 {
+      font-size: 30px;
+      font-family: MontserratRegular, serif;
+      color: #fff;
+      opacity: 0.65;
+      padding-bottom: 50px; }
+    body .bg-home .swiper {
+      padding: 10px 0; }
+  body .three-cirle img {
+    width: 20%;
+    margin-top: -50px; }
+  body .content_pro {
+    padding: 20px 0; }
   body .btn_config img {
     vertical-align: middle;
     width: 60px;
     height: 60px;
     margin: 10px 8px; }
-  body .content {
-    margin-top: -70px; }
-  body .title .content_feed_5_back {
-    font-size: 90px;
-    font-weight: bold;
-    color: #02145a; }
-  body .title .icon_right {
-    font-size: 80px;
-    font-weight: bold;
-    color: #02145a;
-    float: right;
-    margin-right: 30px; }
-  body .content_title {
-    margin: 50px 0;
-    font-size: 60px; }
-  body .content_title .title_1 {
-    color: #fff;
-    font-family: monsterLight; }
-  body .content_title .title_2 {
-    color: rgba(254, 245, 238, 0.47);
-    font-family: monsterLight; }
-  body .content_title .title_3 {
-    color: rgba(254, 245, 238, 0.47);
-    font-family: monsterLight;
-    margin-right: 0px; }
-  body .btn_config {
-    margin-top: 50px;
-    margin-bottom: 50px; }
-  body .btn_config .btn_small {
-    width: 80px;
-    height: 80px;
-    background: #33d5fe;
-    border-radius: 40px;
-    z-index: 1;
-    margin-top: -113px;
-    margin-left: 30px; }
-  body .btn_config .btn_lag {
-    width: 140px;
-    height: 140px;
-    background: rgba(254, 245, 238, 0.47);
-    border-radius: 80px;
-    z-index: 0;
-    margin-top: -100px; }
-  body .btn_small > span {
-    margin-left: 32px;
-    margin-top: 32px; }
-  body .content_config {
-    margin-top: 25px; }
   body .caption h1 {
-    font-family: monsterBlack;
-    font-size: 45px;
-    color: #02145a; }
+    font-size: 14px;
+    font-family: MontserratsemiBold, serif;
+    color: #02145A; }
   body .caption p {
-    font-family: monsterRegular;
-    font-size: 38px;
-    color: #02145a;
-    padding-bottom: 15px; }
-  body .caption .fa {
-    font-size: 50px;
-    color: #a2a6c6; }
+    font-size: 11px;
+    font-family: MontserratLight, serif, serif;
+    color: #02145A; }
   body .caption {
-    padding-bottom: 65px !important;
+    padding-bottom: 20px !important;
     padding-top: 10px !important; }
-  body .caption .num {
-    font-size: 30px;
-    font-family: monsterLight;
-    color: #a2a6c6; }
-  body .header_title {
-    margin-left: 0px;
-    margin-right: 0px; }
-  body .thumbnail a > img, body .thumbnail > img {
-    width: 100%;
-    border-radius: 20px 20px 0 0; }
   body .thumbnail {
-    border-radius: 20px; }
-  body p.icon_content_5 {
-    font-size: 45px;
-    font-family: monsterLight;
-    color: #a2a6c6;
-    display: initial; }
-  body .thumbnail .caption {
-    padding: 40px;
-    color: #333; }
+    border-radius: 5px;
+    padding: 0 !important; }
+    body .thumbnail a img {
+      width: 100%;
+      border-radius: 5px 5px 0 0; }
+    body .thumbnail img {
+      width: 100%;
+      border-radius: 5px 5px 0 0; }
+    body .thumbnail .caption {
+      padding: 10px 15px; }
+  body .statistical {
+    display: flex; }
+    body .statistical p.number {
+      padding-left: 5px;
+      font-size: 14px;
+      font-family: MontserratLight, serif;
+      color: #A2A6C6; }
+    body .statistical img {
+      width: 17px;
+      height: 20px; }
 
 /*# sourceMappingURL=index_5.css.map */

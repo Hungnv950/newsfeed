@@ -15,10 +15,17 @@
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 
+@mixin title_header {
+  font-family: MontserratsemiBold, serif;
+  font-size: 13px;
+  color: #02145A;
+  letter-spacing: 2px;
+}
 
-@mixin p{
+@mixin p {
 
 }
+
 /*Color from left filed*/
 $color_content_left: #fd4968;
 /*Color from right filed*/
@@ -59,11 +66,13 @@ body, header, content, footer, .container {
   width: 100%;
   height: auto;
 }
-@mixin header_h1_title{
+
+@mixin header_h1_title {
   font-family: MontserratsemiBold, serif;
   font-size: 13px;
   color: $color_text;
 }
+
 header {
   padding-top: 20px;
   h1 {
@@ -111,6 +120,7 @@ header {
   color: $color_text;
   text-align: center;
 }
+
 @mixin field {
   @include background("../imgs/field.png");
   text-align: center;
@@ -214,6 +224,7 @@ header {
   padding: 0 0 0 10px;
   color: #02135a;
 }
+
 @mixin produce_content_text_own {
   font-size: 11px;
   font-family: MontserratLight, serif;
@@ -222,31 +233,37 @@ header {
   font-weight: normal;
   letter-spacing: 0;
 }
+
 $margin_price: 0;
 @mixin produce_price_money {
   font-size: 14px;
-  font-family:MontserratRegular, serif;
+  font-family: MontserratRegular, serif;
   color: #02135a;
 }
+
 @mixin produce_price_span {
   font-size: 15px;
 }
+
 @mixin produce_price_plus {
   @include icon_euro("../imgs/plus.png");
   padding: 8px;
   margin-top: 20px;
 }
+
 @mixin icon_euro($url) {
   background: url($url);
   color: #02135a;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 @mixin touch_slide {
   background-color: #ffe5e0;
   height: 100%;
   overflow-y: auto;
 }
+
 .header-fixed {
   padding-top: 185px;
 }
@@ -275,9 +292,8 @@ $margin_price: 0;
 
 /*button back*/
 .back {
-  font-size:$size_back;
+  font-size: $size_back;
 }
-
 
 //Animationload*/
 .animationload {
@@ -300,4 +316,45 @@ $margin_price: 0;
   background-image: url("loading-gear.gif");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* use for title header page 5,8,9*/
+@mixin header_title_page {
+  @include title_header;
+  .header-top {
+    img {
+      &.tag {
+        width: 50px;
+        height: 35px;
+      }
+      &.remove {
+        width: 50px;
+        height: 25px;
+        float: right;
+        margin-top: 5px;
+      }
+    }
+    h1 {
+      @include title_header;
+      text-align: center;
+    }
+  }
+  .title_header {
+    padding-top: 30px;
+  }
+}
+
+@mixin caption_text {
+  .caption {
+    h1 {
+      font-size: 14px;
+      font-family: MontserratsemiBold, serif;
+      color: #02145A;
+    }
+    p{
+      font-size: 11px;
+      font-family: MontserratLight, serif, serif;
+      color: #02145A;
+    }
+  }
 }
