@@ -6,13 +6,11 @@
     <title>Categories</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/config.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style_2.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -32,16 +30,9 @@
                     <h1 class="col-xs-6 col-xs-offset-4 ">DEIN NEWSFEED</h1>
                     <img class="col-xs-2 remove_icon" src="imgs/icon_remove.png" alt="">
                 </div>
-                <!--<div class="row">
-                    <div class="newfeed_2_bn">
-                        <div class="newfeed_2_bn_right"></div>
-                        <div class="newfeed_2_bn_left" ng-click="back_to_newFeed_3()"></div>
-                    </div>
-                </div>-->
                 <div class="row btn_touch">
                     <div class="header_choose col-xs-12">
                         <img src="imgs/icon_circle_big.png" alt="">
-                        <img src="imgs/icon_circle_small.png" alt="">
                         <img src="imgs/icon_circle_small.png" alt="">
                     </div>
                 </div>
@@ -57,53 +48,60 @@
     </div>
     <!--END content_feed_2-->
     <div class="row">
-        <div class="content_link">
-            <div class="col-xs-12" style="padding-bottom: 200px">
-                <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
-                   ng-click="checkClick(key,value._id)">{{value.title}}</a>
+        <div class="container">
+            <div class="row">
+                <div class="content_link">
+                    <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
+                       ng-click="checkClick(key,value._id)">{{value.title}}</a>
+                    <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link btn-active"
+                       ng-click="checkClick(key,value._id)">{{value.title}}</a><a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
+                                                                                  ng-click="checkClick(key,value._id)">{{value.title}}</a>
+                    <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link btn-active"
+                       ng-click="checkClick(key,value._id)">{{value.title}}</a><a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
+                                                                                  ng-click="checkClick(key,value._id)">{{value.title}}</a>
+                </div>
+            </div>
+        </div>
+
+        <!--BEGIN NEWFEDD STARTED-->
+        <div class="row">
+            <div class="newfeed_starten weiter" ng-click="checkNext()">
+                <h1>Weiter</h1>
+            </div>
+        </div>
+        <!--END NEWFEED STARTED-->
+
+        <div class="" id="footer">
+            <div id="exTab1" class="col-xs-12">
+                <ul class="nav nav-pills">
+                    <li class="active">
+                        <a href="#1a" data-toggle="tab"><span class="fa fa-th-large"></span>
+                            <p style="text-align: center;vertical-align: middle">News</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#2a" data-toggle="tab"><span class="fa fa-graduation-cap coaching"></span>
+                            <p style="text-align: center;vertical-align: middle">Coachings</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#3a" data-toggle="tab"><span class="fa fa-comment-o"></span>
+                            <p style="text-align: center;vertical-align: middle">Zenzai</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#3a" data-toggle="tab"><span class="fa  fa-shopping-cart"></span>
+                            <p style="text-align: center;vertical-align: middle">Shop</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#4a" data-toggle="tab"><span class="fa fa-user-o"></span>
+                            <p style="text-align: center;vertical-align: middle">Profile</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-
-    <!--BEGIN NEWFEDD STARTED-->
-    <div class="row">
-        <div class="newfeed_starten weiter" ng-click="checkNext()">
-            <h1>Weiter</h1>
-        </div>
-    </div>
-    <!--END NEWFEED STARTED-->
-
-    <div class="" id="footer">
-        <div id="exTab1" class="col-xs-12">
-            <ul class="nav nav-pills">
-                <li class="active">
-                    <a href="#1a" data-toggle="tab"><span class="fa fa-th-large"></span>
-                        <p style="text-align: center;vertical-align: middle">News</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#2a" data-toggle="tab"><span class="fa fa-graduation-cap coaching"></span>
-                        <p style="text-align: center;vertical-align: middle">Coachings</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#3a" data-toggle="tab"><span class="fa fa-comment-o"></span>
-                        <p style="text-align: center;vertical-align: middle">Zenzai</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#3a" data-toggle="tab"><span class="fa  fa-shopping-cart"></span>
-                        <p style="text-align: center;vertical-align: middle">Shop</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#4a" data-toggle="tab"><span class="fa fa-user-o"></span>
-                        <p style="text-align: center;vertical-align: middle">Profile</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
 </body>
 </html>

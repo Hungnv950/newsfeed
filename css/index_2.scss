@@ -11,7 +11,7 @@ body {
       img {
         &.remove_icon {
           padding: 23px;
-          margin-top: 16px;
+          margin-top: 0px;
         }
       }
       h1 {
@@ -19,6 +19,7 @@ body {
         color: #02145a;
         font-size: 13px;
         margin-top: 40px;
+        letter-spacing: 2px;
       }
       .newfeed_2_bn {
         height: 120px;
@@ -50,7 +51,7 @@ body {
       padding-top: 50px;
       margin-top: -25px;
       .btn_link {
-        margin: 6px 15px;
+        margin: 6px 10px;
         border: 1px solid #222222;
         border-radius: 40px;
         color: #222222;
@@ -70,16 +71,24 @@ body {
         background: #fff;
         border: 1px solid #fff;
       }
+      .content_link_top {
+        h1 {
+          font-family: MontserratsemiBold, serif;
+          font-size: $size_p;
+          color: $color_text;
+        }
+      }
     }
     .newfeed_starten {
       background: url(../imgs/bg_newfeed2_conbutton.png);
       background-repeat: no-repeat;
       height: 60px;
       position: fixed;
-      bottom: 100px;
+      bottom: 50px;
       width: 100%;
       border-top: 2px solid #fff3f6;
       text-align: center;
+      margin-left: 15px;
       h1 {
         color: #fff;
         font-family: MontserratsemiBold, serif;
@@ -100,3 +109,6 @@ body {
 }
 
 
+#footer {
+  //margin-left: -15px;
+}
