@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
     <title>Home</title>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/config.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
@@ -14,10 +18,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="libs/angular.min.js"></script>
+    <script type="text/javascript" src="libs/angular-cookies.js"></script>
+    <script type="text/javascript" src="libs/angular-color-this.min.js"></script>
+    <script type="text/javascript" src="angular/newsfeed4.js"></script>
     <link rel="stylesheet" href="css/index_4.css">
 
 </head>
-<body>
+<body ng-controller="newsFeed4Ctrl" data-ng-app="newsFeedApp">
 <div class="container-fluid bg-home" id="container">
     <div class="row">
         <header>
@@ -36,7 +44,7 @@
                 </div>
                 <div class="row">
                     <div class="row btn_config">
-                        <div class="col-xs-12 btn_config_top" >
+                        <div class="col-xs-12 btn_config_top">
                             <div class="btn_lag"></div>
                             <div class="btn_small">
                                 <span class="config_plus"></span>
@@ -46,8 +54,9 @@
                 </div>
                 <div class="row">
                     <div class="end-header">
-                        <h1 class="col-xs-6 col-offset-6">Deine persönliche
-                            Themenwelt</h1>
+                        <h1 class="col-xs-6 col-offset-6">
+                            Deine persönliche Themenwelt
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -85,19 +94,21 @@
                 <div class="container">
                     <div class="row">
                         <div class="field">
-                            <div class="container">
+                            <div class="container" ng-repeat="(key,value) in show"
+                                 data-ng-click="articles(value._id,key)"
+                                 data-ng-if=" ( key<2 && show.length >=2 ) || show.length < 2">
                                 <div class="row">
-                                    <span></span>
-                                    <img src="imgs/ct1.png" alt="">
+                                    <span color-this="background-color" data-color="key"></span>
+                                    <img data-ng-src="{{value.image}}" alt="">
                                 </div>
                                 <div class="row">
                                     <div class="count-post">
-                                        <p>62</p>
+                                        <p>{{value.articles}}</p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="title-cate">
-                                        <p>Gewicht & Ernährung</p>
+                                        <p>{{value.cat_name}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -112,27 +123,27 @@
         <div id="exTab1" class="col-xs-12">
             <ul class="nav nav-pills">
                 <li class="active">
-                    <a href="#1a" data-toggle="tab"><span class="fa fa-th-large"></span>
+                    <a href="" data-toggle="tab"><span class="fa fa-th-large"></span>
                         <p style="text-align: center;vertical-align: middle">News</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#2a" data-toggle="tab"><span class="fa fa-graduation-cap coaching"></span>
+                    <a href="" data-toggle="tab"><span class="fa fa-graduation-cap coaching"></span>
                         <p style="text-align: center;vertical-align: middle">Coachings</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#3a" data-toggle="tab"><span class="fa fa-comment-o"></span>
+                    <a href="" data-toggle="tab"><span class="fa fa-comment-o"></span>
                         <p style="text-align: center;vertical-align: middle">Zenzai</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#3a" data-toggle="tab"><span class="fa  fa-shopping-cart"></span>
+                    <a href="" data-toggle="tab"><span class="fa  fa-shopping-cart"></span>
                         <p style="text-align: center;vertical-align: middle">Shop</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#4a" data-toggle="tab"><span class="fa fa-user-o"></span>
+                    <a href="" data-toggle="tab"><span class="fa fa-user-o"></span>
                         <p style="text-align: center;vertical-align: middle">Profile</p>
                     </a>
                 </li>

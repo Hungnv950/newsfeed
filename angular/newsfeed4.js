@@ -1,6 +1,6 @@
-var newsFeedApp = angular.module('deniApp', ['ngCookies', 'ngColorThis']);
+var newsFeedApp = angular.module('newsFeedApp', ['ngCookies', 'ngColorThis']);
 
-newsFeedApp.controller('newFeed4', ['$scope', '$http', '$filter', '$timeout', '$cookieStore', function ($scope, $http, $filter, $timeout, $cookieStore) {
+newsFeedApp.controller('newsFeed4Ctrl', ['$scope', '$http', '$filter', '$timeout', '$cookieStore', function ($scope, $http, $filter, $timeout, $cookieStore) {
 
     //loading gif
     $scope.load = angular.element(document.querySelector('#load'));
