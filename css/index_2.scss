@@ -11,7 +11,12 @@ body {
       img {
         &.remove_icon {
           padding: 23px;
-          margin-top: 0px;
+          margin-top: 0;
+          position: absolute;
+          width: 70px;
+          height: 70px;
+          right: 0;
+          margin-right: 15px;
         }
         &.back_icon {
           display: inline-block;
