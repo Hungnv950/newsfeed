@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="header-top">
                         <div class="header-own">
-                            <div class="col-xs-offset-3 col-xs-6">
+                            <div class="col-xs-6 col-xs-offset-3">
                                 <p>DEIN NEWSFEED</p>
                             </div>
                             <div class="col-xs-3 img">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="row">
                     <div class="row btn_config">
-                        <div class="col-xs-12 btn_config_top" >
+                        <div class="col-xs-12 btn_config_top">
                             <div class="btn_lag"></div>
                             <div class="btn_small">
                                 <span class="config_plus"></span>
@@ -44,14 +44,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!--<div class="row">
                     <div class="end-header">
                         <h1 class="col-xs-6 col-offset-6">Deine persönliche
                             Themenwelt</h1>
                     </div>
-                </div>
+                </div>-->
             </div>
         </header>
+    </div>
+    <div class="row pro_config">
+        <div class="content">
+            <h1>{{show.title}} <br>{{show.description}}</h1>
+        </div>
+    </div>
+    <div class="row pad_row" ng-repeat="(key,value) in show.pre_articles" ng-click="savePreArticles(value)">
+        <div class="col-xs-12 img_pro" ng-if="key < 2 ">
+            <div class="node" ng-style="randomColorIcon(key)"></div>
+            <a href="#" class="thumbnail">
+                <h1>{{value.articles.length}}</h1>
+                <p style="left: 25%;">{{value.title}}</p>
+                <img ng-src="images/newfeed_4/{{value.image}}" alt="...">
+            </a>
+        </div>
+
+        <div class="row" ng-if="key > 1">
+            <div class="col-xs-6">
+                <div class="node" style="background:#cf8bf3;"></div>
+                <a href="#" class="thumbnail" style="height: 360px">
+                    <span>{{value.title}}</span>
+                    <h1>{{value.articles.length}}</h1>
+                    <img ng-src="images/newfeed_4/{{value.image}}" alt="..." style="height: 348px;">
+                </a>
+            </div>
+        </div>
     </div>
 
     <div class="row">

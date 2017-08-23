@@ -5,28 +5,28 @@ body {
   background: $color_bg_4;
 }
 
-header  {
+header {
   padding-top: 0;
   .header-top {
-      @include background("../imgs/bg4.png");
-      height: 120px;
-     .header-own {
-       padding-top: 20px;
-       p {
-         text-align: center;
-         @include header_h1_title;
-         color: #fff;
-         letter-spacing: 2px;
-         padding-top: 20px;
-       }
-       .img {
-         text-align: right;
-         img {
-           vertical-align: middle;
-           height: 40px;
-         }
-       }
-     }
+    @include background("../imgs/bg4.png");
+    height: 120px;
+    .header-own {
+      padding-top: 20px;
+      p {
+        text-align: center;
+        @include header_h1_title;
+        color: #fff;
+        letter-spacing: 2px;
+        padding-top: 20px;
+      }
+      .img {
+        text-align: right;
+        img {
+          vertical-align: middle;
+          height: 40px;
+        }
+      }
+    }
   }
 
   .btn_config {
@@ -67,15 +67,14 @@ header  {
       margin: auto;
     }
   }
-
- .end-header {
-   h1 {
-     font-size: 24px;
-     font-family: MontserratLight, serif;
-     color: #02145a;
-     letter-spacing: 0;
-   }
- }
+  .end-header {
+    h1 {
+      font-size: 24px;
+      font-family: MontserratLight, serif;
+      color: #02145a;
+      letter-spacing: 0;
+    }
+  }
 }
 
 .field {

@@ -1,0 +1,165 @@
+@import "variables";
+
+body {
+  background: #fff6f2;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  .bg-home {
+    @include background("../imgs/header_5.png");
+    header {
+      //padding-bottom: 30px;
+      .title{
+        img{
+          &.content_feed_5{
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+  .thumbnail iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .btn_config img {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin: 10px 8px;
+  }
+
+  .content {
+    margin-top: -70px;
+  }
+
+  .content_feed_5 h1 {
+
+  }
+
+  .title .content_feed_5_back {
+    font-size: 90px;
+    font-weight: bold;
+    color: #02145a;
+  }
+
+  .title .icon_right {
+    font-size: 80px;
+    font-weight: bold;
+    color: #02145a;
+    float: right;
+    margin-right: 30px;
+  }
+
+  .content_title {
+    margin: 50px 0;
+    font-size: 60px;
+  }
+
+  .content_title .title_1 {
+    color: #fff;
+    font-family: monsterLight;
+  }
+
+  .content_title .title_2 {
+    color: rgba(254, 245, 238, 0.47);
+    font-family: monsterLight;
+  }
+
+  .content_title .title_3 {
+    color: rgba(254, 245, 238, 0.47);;
+    font-family: monsterLight;
+    margin-right: 0px;
+  }
+
+  .btn_config {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .btn_config .btn_small {
+    width: 80px;
+    height: 80px;
+    background: #33d5fe;
+    border-radius: 40px;
+    z-index: 1;
+    margin-top: -113px;
+    margin-left: 30px;
+  }
+
+  .btn_config .btn_lag {
+    width: 140px;
+    height: 140px;
+    background: rgba(254, 245, 238, 0.47);
+    border-radius: 80px;
+    z-index: 0;
+    margin-top: -100px;
+  }
+
+  .btn_small > span {
+    margin-left: 32px;
+    margin-top: 32px;
+  }
+
+  .content_config {
+    margin-top: 25px;
+  }
+
+  .caption h1 {
+    font-family: monsterBlack;
+    font-size: 45px;
+    color: #02145a;
+  }
+
+  .caption p {
+    font-family: monsterRegular;
+    font-size: 38px;
+    color: #02145a;
+    padding-bottom: 15px;
+  }
+
+  .caption .fa {
+    font-size: 50px;
+    color: #a2a6c6;
+  }
+
+  .caption {
+    padding-bottom: 65px !important;
+    padding-top: 10px !important;
+  }
+
+  .caption .num {
+    font-size: 30px;
+    font-family: monsterLight;
+    color: #a2a6c6;
+  }
+
+  .header_title {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .thumbnail a > img, .thumbnail > img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .thumbnail {
+    border-radius: 20px;
+  }
+  p.icon_content_5 {
+    font-size: 45px;
+    font-family: monsterLight;
+    color: #a2a6c6;
+    display: initial;
+  }
+  .thumbnail .caption {
+    padding: 40px;
+    color: #333;
+  }
+}
+
+
+
+
