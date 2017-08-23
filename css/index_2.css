@@ -67,12 +67,19 @@ body {
     body .bg-home .content_feed_2 img.remove_icon {
       padding: 23px;
       margin-top: 0px; }
+    body .bg-home .content_feed_2 img.back_icon {
+      display: inline-block;
+      width: 45px;
+      height: 30px;
+      margin-top: 25px;
+      margin-left: 15px; }
     body .bg-home .content_feed_2 h1 {
       font-family: MontserratsemiBold, serif;
       color: #02145a;
       font-size: 13px;
       margin-top: 40px;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      text-align: center; }
     body .bg-home .content_feed_2 .newfeed_2_bn {
       height: 120px;
       text-align: center;
