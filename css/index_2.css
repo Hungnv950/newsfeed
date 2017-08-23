@@ -86,7 +86,12 @@ body {
     width: 100%; }
     body .bg-home .content_feed_2 img.remove_icon {
       padding: 23px;
-      margin-top: 0px; }
+      margin-top: 0;
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      right: 0;
+      margin-right: 15px; }
     body .bg-home .content_feed_2 img.back_icon {
       display: inline-block;
       width: 45px;
