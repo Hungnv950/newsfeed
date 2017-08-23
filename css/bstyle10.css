@@ -1,0 +1,107 @@
+@font-face {
+  font-family: monsterBlack;
+  src: url(../fonts/Montserrat-Bold.ttf); }
+@font-face {
+  font-family: monsterRegular;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+@font-face {
+  font-family: monsterLight;
+  src: url(../fonts/Montserrat-Light.ttf); }
+@font-face {
+  font-family: monsterBold;
+  src: url(../fonts/Montserrat-Bold.ttf); }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff; }
+
+.header {
+  background-image: url("../images/bg10.png");
+  background-size: cover;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  height: 150px;
+  padding-top: 20px; }
+  .header .title {
+    position: relative; }
+    .header .title h1 {
+      font-family: monsterBold;
+      color: #02145a;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      padding: 0;
+      margin: 0; }
+    .header .title .content_feed_10_back {
+      position: absolute;
+      left: 20px;
+      top: -7px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #02145a; }
+
+.content_title {
+  background-color: #ffd1c9;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .content_title .content_title_icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #33d5fe;
+    margin: 10px;
+    float: left; }
+  .content_title .content_title_icon_2 {
+    background: #fb5d5e; }
+  .content_title .content_title_name h1 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    color: #fff;
+    font-family: monsterLight; }
+
+.media {
+  border-bottom: 2px solid #ffbbb8;
+  margin-top: 0px !important; }
+  .media .media-left {
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 30%; }
+    .media .media-left a img {
+      width: 100%;
+      height: 100%;
+      float: left; }
+  .media .media-body {
+    float: left;
+    width: 60%;
+    margin: 0;
+    display: block;
+    padding: 10px; }
+    .media .media-body .media-heading {
+      color: #02145a;
+      font-family: monsterBold;
+      font-size: 12px; }
+    .media .media-body span {
+      color: #02145a;
+      font-family: monsterLight;
+      font-size: 10px; }
+  .media .media-right {
+    float: left;
+    width: 10%;
+    margin: 0 auto;
+    text-align: center; }
+    .media .media-right .fa {
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+      vertical-align: middle;
+      color: #02145a;
+      font-size: 20px; }
+
+/*# sourceMappingURL=bstyle10.css.map */

@@ -1,0 +1,19 @@
+@import "variables";
+
+body {
+
+}
+
+header {
+  padding-top: 0;
+  img {
+    width: 100%;
+  }
+  .header-top {
+    h1 {
+      font-size: $size_p;
+      color: $color_text;
+      font-family: MontserratsemiBold, serif;
+    }
+  }
+}

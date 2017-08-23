@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Categories</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css_/fontface.css">
+    <link rel="stylesheet" href="css_/bstyle1.css">
+    <link rel="stylesheet" href="css_/newpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body ng-controller="newsfeed13Ctrl" data-ng-app="newsFeedApp">
+<!-- Load page -->
+<div class="animationload" style="display: block;" id="load">
+    <div class="loader"></div>
+</div>
+<!-- End load page -->
+<div class="body-wrapper">
+    <!--START content_feed_2-->
+    <header class="header bg-inline">
+        <div class="header-top">
+            <div class="container">
+                <h1 class="title-header text-center">5 Tipps Sich Selbst Zu</h1>
+                <span class="back-page" data-ng-click="back()"></span>
+            </div>
+        </div>
+        <div class="header-bottom header-comment">
+            <div class="container">
+                <div class="head-content-cm">
+                    <div class="head-cm item-clock">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="date-time">{{article.datetime}}</span>
+                    </div>
+                    <div class="head-cm item-count-comment">
+                        <i class="fa fa-comment-o"></i>
+                        <span class="count-comment">{{article.comments.length}}</span>
+                    </div>
+                    <div class="head-cm item-page">
+                        <i class="fa fa-bookmark-o"></i>
+                        <span class="count-page">{{article.favorites}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="newfeed_comment">
+        <div class="container">
+            <div class="comments-content">
+                <ul class="list-comment">
+                    <li class="item-comment" data-ng-repeat="(key,value) in article.comments">
+                        <div class="item-avata pull-left">
+                            <img data-ng-src="{{value.avatar}}" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h4 class="item-title">{{value.user_name}}</h4>
+                            <div class="mstLight commtent">
+                                {{value.content}}
+                            </div>
+                            <div class="comment-foter mstLight">
+                                <div class="time-current pull-left">{{convertDate(value.datetime.$date.$numberLong)}}
+                                </div>
+                                <div class="item-reply pull-right">
+                                    <a href="" data-ng-click="seeAntworten(key)">
+                                        <span class="count-reply">{{value.children.length}}</span>
+                                        <span class="reply">antworten</span>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <ul class="list-comment-child" id="antworten_{{key}}" style="display: none;">
+                            <li class="item-comment-child" data-ng-repeat="(key_,value_) in value.children">
+                                <div class="item-avata pull-left">
+                                    <img data-ng-src="{{value_.avatar}}" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <h4 class="item-title">{{value_.user_name}}</h4>
+                                    <div class="mstLight commtent">
+                                        {{value_.content}}
+                                    </div>
+                                    <div class="comment-foter mstLight">
+                                        <div class="time-current pull-left">
+                                            {{convertDate(value_.datetime.$date.$numberLong)}}
+                                        </div>
+                                        <div class="item-reply pull-right">
+                                            <a href="">
+                                                <span class="count-reply"></span>
+                                                <span class="reply">antworten</span>
+                                            </a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="form-reply" ng-show="reply">
+                    <form class="frm-reply" action="">
+                        <input type="text" class="input-reply" placeholder="Antwort">
+                        <button class="btn-submit">sumit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newfeed_share_comment">
+        <div class="container">
+            <div class="form-share-comment">
+                <form action="" class="frm-share-comment">
+                    <input type="text" class="input-share-comment" placeholder="Teile Deine Erfahrung mit uns ">
+                    <button class="fa  fa-microphone btn-share"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
