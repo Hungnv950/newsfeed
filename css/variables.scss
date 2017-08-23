@@ -1,0 +1,267 @@
+@import "footer.css";
+
+@font-face {
+  font-family: MontserratsemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+/*Color from left filed*/
+$color_content_left: #fd4968;
+/*Color from right filed*/
+$color_content_right: #fc624e;
+/*Color text*/
+$color_text: #02145a;
+/*color $color_content_12*/
+$color_content_12: #FFDED9;
+/*color bg 2*/
+$color_bg_2: #fecdd4;
+/*color opacity*/
+$color_opacity: #9AA1BD;
+/*colorfooter*/
+$color_footer: #a3a5bb;
+/*color of 12*/
+$color_12: #FFCDD5;
+
+$color_16: #FFD1CA;
+/*size of p content*/
+$size_p: 13px;
+/*size p small*/
+$size_p_small: 11px;
+/*size h1 */
+$size_h: 21px;
+
+$size_close: 25px;
+/*height of input and content form*/
+$height_input: 60px;
+/*size back*/
+$size_back: 40px;
+body, header, content, footer, .container {
+  font-family: MontserratLight, serif;
+  //padding: 0;
+  //margin: 0;
+  width: 100%;
+}
+
+header {
+  padding-top: 20px;
+  h1 {
+    letter-spacing: 2px;
+  }
+}
+
+@mixin background($url) {
+  background: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+@mixin icon_shop {
+  background: url("../shop/index_4/cart.png");
+  width: 32px;
+  height: 28px;
+  margin-right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin icon_map {
+  background: url("../shop/index_4/location.png");
+  width: 15px;
+  height: 40px;
+  //float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin header_h1_remove {
+  font-family: MontserratLight, serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #fff;
+  text-align: left;
+  padding-left: 20px;
+}
+
+@mixin header_title_h1 {
+  font-size: 13px;
+  font-family: MontserratLight, serif;
+  color: $color_text;
+  text-align: center;
+}
+@mixin field {
+  @include background("../imgs/field.png");
+  text-align: center;
+  width: 100%;
+  p {
+    color: #fff;
+    font-family: MontserratsemiBold, serif;
+    font-size: $size_p;
+    padding: 15px;
+    margin: 0px;
+  }
+}
+
+@mixin footer {
+  @include field;
+  position: fixed;
+  bottom: 0;
+}
+
+@mixin on-off {
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 1px;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: $color_content_left;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px $color_content_left;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+@mixin produce {
+  background: #fff;
+  border: 1px solid #ffa9b0;
+  border-radius: 6px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+@mixin produce_img {
+  padding: 25px 10px;
+  width: 100%;
+}
+
+@mixin produce_content_text_border {
+  border-top: 1px solid #bdc0d3;
+  border-bottom: 1px solid #bdc0d3;
+}
+
+@mixin produce_content_text_name {
+  font-size: 10px;
+  font-family: MontserratsemiBold, serif;
+  padding: 0 0 0 10px;
+  color: #02135a;
+}
+@mixin produce_content_text_own {
+  font-size: 11px;
+  font-family: MontserratLight, serif;
+  color: #a1a6c5;
+  padding: 0 0 10px 10px;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+$margin_price: 0;
+@mixin produce_price_money {
+  font-size: 14px;
+  font-family:MontserratRegular, serif;
+  color: #02135a;
+}
+@mixin produce_price_span {
+  font-size: 15px;
+}
+@mixin produce_price_plus {
+  @include icon_euro("../imgs/plus.png");
+  padding: 8px;
+  margin-top: 20px;
+}
+@mixin icon_euro($url) {
+  background: url($url);
+  color: #02135a;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin touch_slide {
+  background-color: #ffe5e0;
+  height: 100%;
+  overflow-y: auto;
+}
+.header-fixed {
+  padding-top: 185px;
+}
+
+.active {
+  background: #B4B9CE;
+}
+/*button header */
+.header_choose {
+  margin-top: 20px;
+  p {
+    font-family: MontserratRegular, serif;
+    font-size: 11px;
+    padding: 8px 0;
+    &.left {
+      border: 1px solid #000;
+      border-right: 1px solid #000;
+      border-radius: 70px 0 0 70px;
+    }
+    &.right {
+      border: 1px solid #000;
+      border-radius: 0 70px 70px 0;
+    }
+  }
+}
+
+/*button back*/
+.back {
+  font-size:$size_back;
+}
