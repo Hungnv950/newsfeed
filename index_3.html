@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
     <title>Categories</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,11 +19,11 @@
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="libs/angular.min.js"></script>
     <script type="text/javascript" src="libs/angular-cookies.js"></script>
-    <script type="text/javascript" src="js/deniNewFeed2.js"></script>
+    <script type="text/javascript" src="angular/newsfeed3.js"></script>
     <link rel="stylesheet" href="css/index_2.css">
 </head>
-<body>
-<div class="container-fluid bg-home" ng-controller="viewCtrl" data-ng-app="deniApp">
+<body ng-controller="newsFeed3Ctrl" data-ng-app="newsFeedApp">
+<div class="container-fluid bg-home">
     <!--START content_feed_2-->
     <div class="row">
         <div class="content_feed_2">
@@ -51,51 +54,31 @@
         <div class="container">
             <div class="row">
                 <div class="content_link">
-                   <div class="container">
-                      <div class="row">
-                          <div class="content_link_top">
-                              <h1>Title</h1>
-                          </div>
-                      </div>
-                      <div class="row">
-                          <div class="content_link_content">
-                              <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
-                                 ng-click="checkClick(key,value._id)">{{value.title}}</a>
-                              <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link btn-active"
-                                 ng-click="checkClick(key,value._id)">{{value.title}}</a><a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
-                                                                                            ng-click="checkClick(key,value._id)">{{value.title}}</a>
-                              <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link btn-active"
-                                 ng-click="checkClick(key,value._id)">{{value.title}}</a><a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
-                                                                                            ng-click="checkClick(key,value._id)">{{value.title}}</a>
-                          </div>
-                      </div>
-
-                       <div class="row">
-                           <div class="content_link_top">
-                               <h1>Title</h1>
-                           </div>
-                       </div>
-                       <div class="row">
-                           <div class="content_link_content">
-                               <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
-                                  ng-click="checkClick(key,value._id)">{{value.title}}</a>
-                               <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link btn-active"
-                                  ng-click="checkClick(key,value._id)">{{value.title}}</a><a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
-                                                                                             ng-click="checkClick(key,value._id)">{{value.title}}</a>
-                               <a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link btn-active"
-                                  ng-click="checkClick(key,value._id)">{{value.title}}</a><a ng-repeat="(key,value) in data" id="title{{key}}" href="#" class="btn btn-lg btn_link"
-                                                                                             ng-click="checkClick(key,value._id)">{{value.title}}</a>
-                           </div>
-                       </div>
-                   </div>
+                    <div class="container" data-ng-repeat="(keyCat,cat) in show">
+                        <div class="row">
+                            <div class="content_link_top">
+                                <h1>{{cat.cat_name}}</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="content_link_content">
+                                <a class="btn btn-lg btn_link"
+                                   data-ng-repeat="(keySub, subSategory) in cat.sub_category"
+                                   data-ng-click="checkClick(keyCat,keySub,cat._id)" id="sub_{{keyCat}}_{{keySub}}"
+                                   ng-class="subSategory.checked == 1 ? 'cate-active' : '' ">
+                                    {{subSategory.sub_cat_name}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!--BEGIN NEWFEDD STARTED-->
         <div class="row">
-            <div class="newfeed_starten weiter" ng-click="checkNext()">
-                <h1>Weiter</h1>
+            <div class="newfeed_starten weiter" data-ng-click="newfeed_starten_btn()">
+                <h1>Newsfeed starten</h1>
             </div>
         </div>
         <!--END NEWFEED STARTED-->
@@ -104,27 +87,27 @@
             <div id="exTab1" class="col-xs-12">
                 <ul class="nav nav-pills">
                     <li class="active">
-                        <a href="#1a" data-toggle="tab"><span class="fa fa-th-large"></span>
+                        <a href="" data-toggle="tab"><span class="fa fa-th-large"></span>
                             <p style="text-align: center;vertical-align: middle">News</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#2a" data-toggle="tab"><span class="fa fa-graduation-cap coaching"></span>
+                        <a href="" data-toggle="tab"><span class="fa fa-graduation-cap coaching"></span>
                             <p style="text-align: center;vertical-align: middle">Coachings</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#3a" data-toggle="tab"><span class="fa fa-comment-o"></span>
+                        <a href="" data-toggle="tab"><span class="fa fa-comment-o"></span>
                             <p style="text-align: center;vertical-align: middle">Zenzai</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#3a" data-toggle="tab"><span class="fa  fa-shopping-cart"></span>
+                        <a href="" data-toggle="tab"><span class="fa  fa-shopping-cart"></span>
                             <p style="text-align: center;vertical-align: middle">Shop</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#4a" data-toggle="tab"><span class="fa fa-user-o"></span>
+                        <a href="" data-toggle="tab"><span class="fa fa-user-o"></span>
                             <p style="text-align: center;vertical-align: middle">Profile</p>
                         </a>
                     </li>
@@ -132,5 +115,6 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
