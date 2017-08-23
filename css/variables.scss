@@ -15,6 +15,14 @@
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 
+@mixin header_h1_title{
+  font-family: MontserratsemiBold, serif;
+  font-size: 13px;
+  color: $color_text;
+}
+@mixin p{
+
+}
 /*Color from left filed*/
 $color_content_left: #fd4968;
 /*Color from right filed*/
@@ -45,6 +53,7 @@ $size_close: 25px;
 $height_input: 60px;
 /*size back*/
 $size_back: 40px;
+
 body, header, content, footer, .container {
   font-family: MontserratLight, serif;
   //padding: 0;
@@ -239,9 +248,9 @@ $margin_price: 0;
   padding-top: 185px;
 }
 
-.active {
-  background: #B4B9CE;
-}
+//.active {
+//  background: #B4B9CE;
+//}
 /*button header */
 .header_choose {
   margin-top: 20px;

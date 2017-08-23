@@ -5,7 +5,7 @@
   -webkit-box-shadow: 0px -11px 12px #fff4f6;
   box-shadow: 0px -11px 12px #fff4f6;
   bottom: 0px !important;
-  height: 130px;
+  height: 70px;
   position: fixed;
   background: #fff;
   /*margin-left: -15px;*/
@@ -16,11 +16,12 @@
 }
 h1,p {
   font-family: MontserratRegular,serif;
-  font-size: 50px;
+  /*font-size: 50px;*/
 }
 #footer ul li p {
   margin: 15px 0 10px -5px;
-  font-size: 22px;
+  font-size: 10px;
+  font-family: MontserratRegular, serif;
 }
 #exTab1 .tab-content {
   padding: 5px 15px;
@@ -30,7 +31,7 @@ h1,p {
   border-radius: 0;
 }
 #exTab1 .nav-pills > li {
-  padding: 10px 42px;
+  padding: 5px;
 }
 .nav-pills>li+li {
   margin-left: 8px;
@@ -40,8 +41,11 @@ h1,p {
   background-color: #fff!important;
 }
 .nav-pills .fa{
-  font-size: 50px;
+  font-size: 20px;
   font-weight: bold;
+}
+.nav>li>a{
+  padding: 10px 12px;
 }
 @media only screen and (min-device-width: 360px) and (max-device-width: 480px) {
   .container-fluid {
@@ -103,9 +107,54 @@ h1,p {
 }
 @media (max-width: 479px) {
   #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     /*height: 60px; */
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 640px) and (orientation: landscape) {
+  .config_2 {
+    margin: 50px;
+    padding-bottom: 230px;
+  }
+}
+
+@media only screen and (min-device-width: 640px){
+  #footer {
+    margin-left: -15px;
+    width: 100%;
+  }
+
+  .config_2 {
+    margin: 50px;
+    padding-bottom: 230px;
+  }
+
+  #exTab1 .nav-pills > li {
+    padding: 0 42px;
+  }
+
+  .btn_config {
+    padding-top: 230px;
+  }
+  .btn_config_top {
+    margin-top: -60px!important;
+  }
+}
+
+@media only screen and (min-device-width: 1336px) and (orientation: landscape) {
+  .config_2 {
+    margin: 50px;
+    padding-bottom: 230px;
+  }
+
+  .btn_config {
+    padding-top: 250px;
+    top: 50%;
+    left: 50%;
+  }
+  .btn_config_top {
+    margin-top: -60px;
   }
 }
